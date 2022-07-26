@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta name="robots" content="noindex">
+        <meta charset="UTF-8">
+        <title>Datanotes</title>
+        <link rel="stylesheet" href="src/main.css">
+        <script src="src/main.js" defer></script>
+        
+        <!BELOW IS THE REFRESH JAVASCRIPT BUTTON.>
+        <script>
+          function refresh(){
+                window.location.reload("Refresh")
+              }
+        </script>
+    </head>
+    <body>
+
+        <!THIS IS THE DATANOTES HEADER ON TOP OF THE PAGE.>
+        <div id="Datanotes">
+          <h1>Datanotes</h1>
+        </div>
+
+        <!ADD NEW NOTE>
+        <div id="app">
+            <button class="add-note" type="button">+</button>
+        </div>
+
+        <div class="menu-button-links">
+          <button type="button"
+                  id="menubutton"
+                  aria-haspopup="true"
+                  aria-controls="menu2">
+              Quick Links
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="down"
+                 width="12"
+                 height="9"
+                 viewBox="0 0 12 9">
+              <polygon points="1 0, 11 0, 6 8"></polygon>
+            </svg>
+          </button>
+          <ul id="menu2"
+              role="menu"
+              aria-labelledby="menubutton">
+            <li role="none">
+              <a role="menuitem" href="https://www.w3.org/">
+                Home Page
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="https://google.com" target="_blank">
+                Google
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="https://youtube.com" target="_blank">
+                Youtube
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="https://amazon.com" target="_blank">
+                Amazon
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="https://airtable.com" target="_blank">
+                Airtable
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="https://microsoft.com" target="_blank">
+                Microsoft
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!THIS IS THE REFRESH CALLOUT BUTTON IN HTML.>      
+        <div id="refresh">
+          <input type="button" value="Refresh" onClick="refresh(this)">
+        </div>
+
+    </body>
+  </html>

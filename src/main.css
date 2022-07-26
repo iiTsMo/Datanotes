@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background: #555555;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0.15);
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 120px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+#Datanotes {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0.15);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 2cm;
+    padding-right: 2cm;
+    padding-left: 2cm;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: hwb(0 43% 57%)
+    
+    
+    
+}
+
+.menu-button-links {
+    margin: 0;
+    font-size: 110%;
+    padding-left: .7cm;
+    padding-top: 0cm;
+    padding-bottom: 2cm;
+  }
+  
+  .menu-button-links button {
+    margin: 0;
+    padding: 6px;
+    display: inline-block;
+    position: relative;
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    font-size: 0.9em;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .menu-button-links [role="menu"] {
+    margin: 0;
+    padding: 7px 4px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    border: 2px solid #1b1b1b;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  
+  .menu-button-links [role="menuitem"],
+  .menu-button-links [role="separator"] {
+    margin: 0;
+    padding: 6px;
+    display: block;
+    width: 24em;
+    background-color: #eee;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .menu-button-links [role="separator"] {
+    padding-top: 3px;
+    background-image: url("../images/separator.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+  
+  .menu-button-links button svg.down {
+    padding-left: 0.125em;
+    fill: currentcolor;
+    stroke: currentcolor;
+  }
+  
+  .menu-button-links button[aria-expanded="true"] svg.down {
+    transform: rotate(180deg);
+  }
+  
+  /* focus styling */
+  
+  .menu-button-links button:hover,
+  .menu-button-links button:focus,
+  .menu-button-links button[aria-expanded="true"] {
+    padding: 4px;
+    border: 3px solid #1b1b1b;
+    background: #eee;
+    color: #222;
+    outline: none;
+    margin: 0;
+  }
+  
+  .menu-button-links [role="menuitem"]:focus {
+    padding: 4px;
+    border: 2px solid #1b1b1b;
+    background: #1b1b1b;
+    color: #fff;
+    outline: none;
+    margin: 0;
+  }
