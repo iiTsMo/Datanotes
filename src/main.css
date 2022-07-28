@@ -57,6 +57,7 @@ body {
     margin-left: 20px;
     margin-top: 30px;
     background-color: hwb(0 43% 57%)
+    user-select: none;
     
     
     
