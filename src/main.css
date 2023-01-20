@@ -86,6 +86,7 @@ body {
     resize: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    filter: blur(8px);
 }
 
 .add-note {
